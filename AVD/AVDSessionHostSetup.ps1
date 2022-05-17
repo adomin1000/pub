@@ -4,13 +4,16 @@ Configuration of AVD Session Host
 .DESCRIPTION
 This script Configures basics of a session host
 .EXAMPLE
-.\AVDBuildScript.ps1 -OOBE generatize
+.\AVDSessionHostSetup.ps1 -OOBE generatize
+.EXAMPLE
+.\AVDSessionHostSetup.ps1 -AVDHostDir = "C:\MyDirectory"
 .EXAMPLE
 Or, just modify Variables and run!
 Run the following before running the .\AVDSessionHostSetup.ps1 file
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 #>
 
+#### Define Parameters that can be called
 [cmdletbinding()]
 param(
     [Parameter(Mandatory=$false,Position=0)]
