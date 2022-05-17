@@ -6,7 +6,7 @@ This script Configures basics of a session host
 .EXAMPLE
 .\AVDSessionHostSetup.ps1 -OOBE generatize
 .EXAMPLE
-.\AVDSessionHostSetup.ps1 -AVDHostDir = "C:\MyDirectory"
+.\AVDSessionHostSetup.ps1 -AVDHostDir "C:\MyDirectory"
 .EXAMPLE
 Or, just modify Variables and run!
 Run the following before running the .\AVDSessionHostSetup.ps1 file
