@@ -37,7 +37,7 @@ param(
     [Parameter(Mandatory=$false)]
     [string]$AVDFileShareName = "profiles"
 )
-$BuildRepo = "https://skyterrastorage.blob.core.windows.net/public/newbuilds"
+$BuildRepo = "https://github.com/adomin1000/pub/blob/main/AVD"
 
 # Disable IE Enhanced Security for admins
 Write-Host "Disabling IE Enhanced Security for admins"
