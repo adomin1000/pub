@@ -24,4 +24,3 @@ $provider = Await ([Windows.Security.Authentication.Web.Core.WebAuthenticationCo
 $accounts = Await ([Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager,Windows,ContentType=WindowsRuntime]::FindAllAccountsAsync($provider, "d3590ed6-52b3-4102-aeff-aad2292ab01c")) ([Windows.Security.Authentication.Web.Core.FindAllAccountsResult,Windows,ContentType=WindowsRuntime])
 
 $accounts.Accounts | ForEach-Object { AwaitAction ($_.SignOutAsync("d3590ed6-52b3-4102-aeff-aad2292ab01c")) }
-
